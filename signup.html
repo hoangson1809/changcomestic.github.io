@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Sign Up Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styleSignUp.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/js/all.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
+    <script src="https://kit.fontawesome.com/de96c8b80a.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+    <form action="test.html" class="signup-form">
+        <h1>Sign Up</h1>
+        <div class="txtb">
+            <input type="text">
+            <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+            <input type="text">
+            <span data-placeholder="Email"></span>
+        </div>
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Password"></span>
+        </div>
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Confirm Password"></span>
+        </div>
+        <input type="submit" class="signbtn" value="Sign Up">
+
+        <div class="middle">
+            <p>
+                Or Sign up With
+            </p>
+            <a class="btnSignupBy" href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btnSignupBy" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btnSignupBy" href="#">
+                <i class="fab fa-google"></i>
+            </a>
+            <a class="btnSignupBy" href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btnSignupBy" href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <div class="bottom-text">
+            <a href="index.html">Back to Home Page</a> <br>
+        </div>
+    </form>
+
+    <script>
+        $(".txtb input").on("focus", function() {
+            $(this).addClass("focus");
+        });
+        $(".txtb input").on("blur", function() {
+            if ($(this).val() == "") $(this).removeClass("focus");
+        });
+    </script>
+
+</body>
+
+</html>
